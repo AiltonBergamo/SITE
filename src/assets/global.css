@@ -1,0 +1,46 @@
+
+:root {
+    --black1: #000;
+    --black2: #c6c6c6;
+    --black3: #eee;
+    --scrollbar-thumb: #1857bc;
+    --btn: #287bff;
+    --navbar: #1857bc;
+    --color: #daac00;
+    --background: #fcc302;
+    --white: #fff;
+    --home-background-image: url(./icon/404-error-animate.svg);
+  }
+
+  input[type=text] {
+    /* border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 1px 1px 2px #333333;
+    -moz-box-shadow: 1px 1px 2px #333333;
+    -webkit-box-shadow: 1px 1px 2px #333333;
+    background: #cccccc;
+    border: 1px solid #000000;
+    width: 350px;
+    height: 35px;     */
+    padding: 0.2rem;
+    border-radius: 1rem;
+    background: var(--black3);
+    text-transform: none;
+    color: var(--black1);
+    border: 0.1rem solid var(--black1);
+    width: 350px;
+    height: 35px;  
+
+}
+
+input[type=text]:hover,
+textarea:hover {
+    background: #ffffff;
+    border: 1px solid #990000;
+}
+
+input[type=submit] {
+    background: #006699;
+    color: #ffffff;
+}

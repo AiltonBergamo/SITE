@@ -147,77 +147,80 @@ async function authApp() {
     return { type: null, token: null }
   }
 }
-async function sendEmail(email) {
-  try {
-    const message = document.querySelector('.envio')
-    message.childNodes.forEach(el => {
-      message.removeChild(el)
-    })
-    if (!email) {
-      throw new Error('E-mail not provided!')
-    }
-    const { type, token } = await authApp()
-    if (!type || !token) {
-      throw new Error(
-        'NÃ£o foi possÃ­vel autenticar com o serviÃ§o de envio de e-mail, tente novamente mais tarde!'
-      )
-    }
-    const requestParams = {
-      url: `${env.BASE_URL}/email/send`,
-      method: 'post',
-      headers: {
-        Authorization: `${type} ${token}`
-      },
-      body: email.generateFormData()
-    }
-    const response = await fetch(requestParams.url, requestParams)
-    const data = await response.json()
 
-    if (data.error) {
-      throw new Error(data.error)
-    }
-    const messageValid = document.createElement('p')
-    messageValid.innerHTML = `
-                Seu e-mail foi enviado com sucesso!
-                <br>
-                Por favor aguarde que entraremos em contato o mais breve possÃ­vel!
-                `
-    document.body.appendChild(messageValid)
-    document.querySelector('.envio').append(messageValid)
-    function delay(n) {
-      return new Promise(function (resolve) {
-        setTimeout(resolve, n * 1000)
-      })
-    }
-    async function myAsyncFunction() {
-      document.querySelector('.form').classList.add('active')
-      document.querySelector('.envio').classList.add('active')
-      await delay(5)
-      document.querySelector('.envio').classList.remove('active')
-      document.querySelector('.form').classList.remove('active')
-    }
-    myAsyncFunction()
-  } catch (error) {
-    console.log(error)
-    var message = document.createElement('span')
-    message.classList.add()
-    message.innerHTML = error.message
-    document.querySelector('.envio').append(message)
-    function delay(n) {
-      return new Promise(function (resolve) {
-        setTimeout(resolve, n * 1000)
-      })
-    }
-    async function myAsyncFunction() {
-      document.querySelector('.form').classList.add('active')
-      document.querySelector('.envio').classList.add('active')
-      await delay(5)
-      document.querySelector('.envio').classList.remove('active')
-      document.querySelector('.form').classList.remove('active')
-    }
-    myAsyncFunction()
-  }
-}
+// async function sendEmail(email) {
+//   try {
+//     const message = document.querySelector('.envio')
+//     message.childNodes.forEach(el => {
+//       message.removeChild(el)
+//     })
+//     if (!email) {
+//       throw new Error('E-mail not provided!')
+//     }
+//     const { type, token } = await authApp()
+//     if (!type || !token) {
+//       throw new Error(
+//         'NÃ£o foi possÃ­vel autenticar com o serviÃ§o de envio de e-mail, tente novamente mais tarde!'
+//       )
+//     }
+//     const requestParams = {
+//       url: `${env.BASE_URL}/email/send`,
+//       method: 'post',
+//       headers: {
+//         Authorization: `${type} ${token}`
+//       },
+//       body: email.generateFormData()
+//     }
+//     const response = await fetch(requestParams.url, requestParams)
+//     const data = await response.json()
+
+//     if (data.error) {
+//       throw new Error(data.error)
+//     }
+    
+//     const messageValid = document.createElement('p')
+//     messageValid.innerHTML = `
+//                 Seu e-mail foi enviado com sucesso!
+//                 <br>
+//                 Por favor aguarde que entraremos em contato o mais breve possÃ­vel!
+//                 `
+//     document.body.appendChild(messageValid)
+//     document.querySelector('.envio').append(messageValid)
+//     function delay(n) {
+//       return new Promise(function (resolve) {
+//         setTimeout(resolve, n * 1000)
+//       })
+//     }
+//     async function myAsyncFunction() {
+//       document.querySelector('.form').classList.add('active')
+//       document.querySelector('.envio').classList.add('active')
+//       await delay(5)
+//       document.querySelector('.envio').classList.remove('active')
+//       document.querySelector('.form').classList.remove('active')
+//     }
+//     myAsyncFunction()
+//   } catch (error) {
+//     console.log(error)
+//     var message = document.createElement('span')
+//     message.classList.add()
+//     message.innerHTML = error.message
+//     document.querySelector('.envio').append(message)
+//     function delay(n) {
+//       return new Promise(function (resolve) {
+//         setTimeout(resolve, n * 1000)
+//       })
+//     }
+//     async function myAsyncFunction() {
+//       document.querySelector('.form').classList.add('active')
+//       document.querySelector('.envio').classList.add('active')
+//       await delay(5)
+//       document.querySelector('.envio').classList.remove('active')
+//       document.querySelector('.form').classList.remove('active')
+//     }
+//     myAsyncFunction()
+//   }
+// }
+
 function requestEmailSender(event) {
   try {
     event.preventDefault()
