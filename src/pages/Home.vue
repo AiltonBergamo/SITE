@@ -132,6 +132,7 @@ export default {
 <style>
 
 .container {
+  margin-top: 75px;
   height: 60vh;
   display: grid;
   grid-template-columns: 50% 50%;
