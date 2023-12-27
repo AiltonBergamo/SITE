@@ -2,7 +2,7 @@
   <div class="container__topo">
     <div class="item__1">
       <router-link to="/">
-        <img alt="Vue logo" src="./assets/logobds.png" class="logo-img">
+        <img alt="Vue logo" src="./assets/LogoTranspBranco.png" class="logo-img">
       </router-link>
     </div>
     <div class="item__4">
@@ -96,9 +96,9 @@ export default {
 }
 
 .logo-img {
-  background-color: black;
+  background-color: transparent;
   max-width: 140px;
-  max-height: 75px;
+  max-height: 80px;
   width: auto;
   height: auto;
 }

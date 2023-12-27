@@ -9,7 +9,7 @@
   </section>
   <section class="secundario  tela">
     <div class="container__img">
-      <img src="../assets/pdv.png" alt="o Comobo+ é a junção do alura+ eo o alura lingua">
+      <img src="../assets/funcional.png" alt="o Comobo+ é a junção do alura+ eo o alura lingua">
     </div>
     <div class="container__secundario">
       <h3>Loja física ou virtual</h3>
@@ -192,8 +192,8 @@ export default {
 }
 
 .container__img img {
-  max-width: 650px;
-  max-height: 375px;
+  max-width: 350px;
+  max-height: 475px;
   width: auto;
   height: auto;    
 }
@@ -259,6 +259,7 @@ export default {
   margin-bottom: 1em;
   text-align: center;
 }
+
 .imag{
   display: flex;
   justify-content: center;
