@@ -76,6 +76,7 @@ export default {
 <style>
 
 .header {
+    margin-top: 75px;
     display: flex;
     flex-direction: column;
     align-items: center;

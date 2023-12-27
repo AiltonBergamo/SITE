@@ -86,6 +86,7 @@ export default {
 }
 
 .image {
+    margin-top: 75px;
     display: flex;
     justify-content: center;
     width: 100%;
