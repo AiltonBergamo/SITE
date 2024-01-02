@@ -14,42 +14,30 @@
           </div>
           <h3>Cadastros</h3>
           <p>Cadastre clientes, funcionarios e fornecedores em um só lugar.</p>
-          <!-- <div class="button">
-                  <a href="pagread.html" class= "btn" rel="next" target= "_self">Saiba mais</a>
-                </div> -->
         </a>
-        <a data-anime="left" class="card" target="_blank"
-          href="https://api.whatsapp.com/send?phone=5544999615259&text=Gostaria de saber a respeito do sistema de gestão de Estoque!">
+        <a data-anime="left" class="card"
+          href="/funcional/estoque">
           <div class="imag">
             <img src="../assets/icon/estoque.png" alt="">
           </div>
           <h3>Estoque</h3>
           <p>Automatize a entrada de produtos em seu estoque e tenha um bom gerenciamento.</p>
-          <!-- <div class="button">
-                  <a href="pagread.html" class= "btn" rel="next" target= "_self">Saiba mais</a>
-                </div> -->
         </a>
-        <a data-anime="left" class="card" target="_blank"
-          href="https://api.whatsapp.com/send?phone=5544999615259&text=Gostaria de saber a respeito do sistema de gestão de Estoque!">
+        <a data-anime="left" class="card"
+          href="/funcional/frenteCaixa">
           <div class="imag">
             <img src="../assets/icon/store-solid.svg" alt="" class="svg_preto">
           </div>
           <h3>Frente de Caixa</h3>
           <p>Controle de caixa e lançamento de vendas.</p>
-          <!-- <div class="button">
-                  <a href="pagread.html" class= "btn" rel="next" target= "_self">Saiba mais</a>
-                </div> -->
         </a>
-        <a data-anime="left" class="card" target="_blank"
-          href="https://api.whatsapp.com/send?phone=5544999615259&text=Gostaria de saber a respeito do sistema de gestão de Venda!">
+        <a data-anime="left" class="card" 
+          href="/funcional/venda">
           <div class="imag">
             <img src="../assets/icon//venda.png" alt="">
           </div>
           <h3>Venda</h3>
           <p>Tenha um grande parceiro no controle de seus negócios e em suas vendas. </p>
-          <!-- <div class="button">
-                <a href="pagread.html" class= "btn" rel="next" target= "_self">Saiba mais</a>
-              </div> -->
         </a>
       </div>
       <div class="row">

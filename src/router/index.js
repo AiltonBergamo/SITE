@@ -3,6 +3,11 @@ import About from "../pages/About.vue";
 import Home from "../pages/Home.vue";
 import Contato from "../pages/Contato.vue";
 import Funcional from "../pages/Funcional.vue";
+import FuncionalidadeCadastro from "../pages/FuncionalidadeCadastro.vue"
+import FuncionalidadeEstoque from "../pages/FuncionalidadeEstoque.vue"
+import FuncionalidadeFrenteCaixa from "../pages/FuncionalidadeFrenteCaixa.vue"
+import FuncionalidadeVenda from "../pages/FuncionalidadeVenda.vue"
+
 
 const routes = [
     {
@@ -24,7 +29,27 @@ const routes = [
         path: "/funcional",
         name: "Funcional-page",
         component: Funcional,
-    }    
+    },
+    {
+        path: "/funcional/cadastro",
+        name: "Funcional-cadastro",
+        component: FuncionalidadeCadastro,
+    },
+    {
+        path: "/funcional/estoque",
+        name: "Funcional-estoque",
+        component: FuncionalidadeEstoque,
+    },
+    {
+        path: "/funcional/frenteCaixa",
+        name: "Funcional-frenteCaixa",
+        component: FuncionalidadeFrenteCaixa,
+    },
+    {
+        path: "/funcional/venda",
+        name: "Funcional-venda",
+        component: FuncionalidadeVenda,
+    }
 ];
 
 const router = createRouter({

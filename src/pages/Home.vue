@@ -54,38 +54,44 @@
               <a href="pagread.html" class= "btn" rel="next" target= "_self">Saiba mais</a>
             </div> -->
       </a>
-      <a data-anime="right" class="card" target="_blank"
-        href="https://api.whatsapp.com/send?phone=5544999615259&text=Gostaria de saber a respeito do sistema de gestão de Indústria!">
+      <a data-anime="left" class="card" href="/funcional/cadastro">
         <div class="imag">
-          <img src="../assets/icon/industria.png" alt="">
+          <img src="../assets/icon/address-card-regular.svg" alt="" class="svg_preto">
         </div>
-        <h3>Indústria</h3>
-        <p>Gerenciamento dos processos centrais dos negócios de sua empresa.</p>
-        <!-- <div class="button">
-              <a href="pagread.html" class= "btn" rel="next" target= "_self">Saiba mais</a>
-            </div> -->
+        <h3>Cadastros</h3>
+        <p>Cadastre clientes, funcionarios e fornecedores em um só lugar.</p>
       </a>
       <a data-anime="left" class="card" target="_blank"
-        href="https://api.whatsapp.com/send?phone=5544999615259&text=Gostaria de saber a respeito do sistema de gestão de Agronegócio!">
+        href="https://api.whatsapp.com/send?phone=5544999615259&text=Gostaria de saber a respeito do sistema de gestão de Estoque!">
         <div class="imag">
-          <img src="../assets/icon/agro.png" alt="">
+          <img src="../assets/icon/store-solid.svg" alt="" class="svg_preto">
         </div>
-        <h3>Agronegócio</h3>
-        <p>Plataforma para análise de dados especializada para agronegócio.</p>
-        <!-- <div class="button">
-              <a href="pagread.html" class= "btn" rel="next" target= "_self">Saiba mais</a>
-            </div> -->
+        <h3>Frente de Caixa</h3>
+        <p>Controle de caixa e lançamento de vendas.</p>
       </a>
-      <a data-anime="right" class="card" target="_blank"
-        href="https://api.whatsapp.com/send?phone=5544999615259&text=Gostaria de saber a respeito do sistema de gestão de Transportes!">
+      <a data-anime="left" class="card" target="_blank"
+        href="https://api.whatsapp.com/send?phone=5544999615259&text=Gostaria de saber a respeito do sistema de gestão de Venda!">
         <div class="imag">
-          <img src="../assets/icon/trans.png" alt="">
+          <img src="../assets/icon/file-invoice-dollar-solid.svg" alt="" class="svg_preto">
         </div>
-        <h3>Transportes</h3>
-        <p>Gerencie sua transportadora ou transporte escolar.</p>
-        <!-- <div class="button">
-              <a href="pagread.html" class= "btn" rel="next" target= "_self">Saiba mais</a>
-            </div> -->
+        <h3>Nota Fiscal</h3>
+        <p>Emita notas fiscas de forma simplificada.</p>
+      </a>
+      <a data-anime="left" class="card" target="_blank"
+        href="https://api.whatsapp.com/send?phone=5544999615259&text=Gostaria de saber a respeito do sistema de gestão de Venda!">
+        <div class="imag">
+          <img src="../assets/icon/file-invoice-solid.svg" alt="" class="svg_preto">
+        </div>
+        <h3>Boleto</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </a>
+      <a data-anime="left" class="card" target="_blank"
+        href="https://api.whatsapp.com/send?phone=5544999615259&text=Gostaria de saber a respeito do sistema de gestão de Venda!">
+        <div class="imag">
+          <img src="../assets/icon/link-solid.svg" alt="" class="svg_preto">
+        </div>
+        <h3>Link de Pagamento</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
       </a>
     </div>
   </section>  

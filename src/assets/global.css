@@ -10,7 +10,9 @@
     --background: #fcc302;
     --white: #fff;
     --home-background-image: url(./icon/404-error-animate.svg);
-    --fundo-padrao: #73AD21;
+    --fundo-padrao: #08a0e3;/*#73AD21*/
+    --texto-padrao: var(--white);
+    --texto-titulo: #3b4599;
   }
 
   input[type=text] {
