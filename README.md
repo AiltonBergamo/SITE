@@ -1,6 +1,6 @@
 # site-pdv
 
-## Project setup
+## Projeto
 ```
 npm install
 ```
