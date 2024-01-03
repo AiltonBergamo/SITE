@@ -7,6 +7,7 @@ import FuncionalidadeCadastro from "../pages/FuncionalidadeCadastro.vue"
 import FuncionalidadeEstoque from "../pages/FuncionalidadeEstoque.vue"
 import FuncionalidadeFrenteCaixa from "../pages/FuncionalidadeFrenteCaixa.vue"
 import FuncionalidadeVenda from "../pages/FuncionalidadeVenda.vue"
+import FuncionalidadeNotaFiscal from "../pages/FuncionalidadeNotaFiscal.vue"
 
 
 const routes = [
@@ -49,6 +50,11 @@ const routes = [
         path: "/funcional/venda",
         name: "Funcional-venda",
         component: FuncionalidadeVenda,
+    },
+    {
+        path: "/funcional/notaFiscal",
+        name: "Funcional-notaFiscal",
+        component: FuncionalidadeNotaFiscal,
     }
 ];
 

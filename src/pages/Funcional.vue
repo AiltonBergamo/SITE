@@ -41,16 +41,13 @@
           <h3>Venda</h3>
           <p>Tenha um grande parceiro no controle de seus negócios e em suas vendas. </p>
         </a>
-        <a data-anime="left" class="card" target="_blank"
-          href="https://api.whatsapp.com/send?phone=5544999615259&text=Gostaria de saber a respeito do sistema de gestão de Venda!">
+        <a data-anime="left" class="card"
+          href="/funcional/notaFiscal">
           <div class="imag">
             <img src="../assets/icon/notaFiscal.svg" alt="" class="svg_preto">
           </div>
           <h3>Nota Fiscal</h3>
           <p>Emita notas fiscas de forma simplificada.</p>
-          <!-- <div class="button">
-                <a href="pagread.html" class= "btn" rel="next" target= "_self">Saiba mais</a>
-              </div> -->
         </a>
         <a data-anime="right" class="card" target="_blank"
           href="https://api.whatsapp.com/send?phone=5544999615259&text=Gostaria de saber a respeito do sistema de gestão de Financeiro!">
