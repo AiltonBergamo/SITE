@@ -1,6 +1,6 @@
 <template>
-    <section class="header_cad">
-        <div class="column">
+    <div class="column">
+        <section class="header_cad">
             <div class="titulo">
                 <h1 class="titulo">
                     Venda
@@ -9,42 +9,44 @@
                 <h2>Nosso sistema permite que você realize vendas de maneira eficiente e sem complicações. Com apenas alguns cliques, você pode registrar uma venda, adicionar produtos e finalizar a transação.</h2>
                 <h2>Junte-se a nós e leve o seu negócio para o próximo nível com o nosso Sistema de Vendas.</h2>
             </div>
-            <div class="bloco">
-                <div class="row">
-                    <div class="column texto center">
-                        <div class="textoEsquerda">
-                            <p class="titulo-sub negrito">Alterar vendas</p>
-                        </div>
-                        <h2>Cometeu um erro? Sem problemas! Nossa funcionalidade de alteração de venda permite que você faça ajustes em vendas já registradas. Você pode adicionar ou remover produtos, alterar quantidades e muito mais.</h2>
+        </section>
+        <div class="bloco">
+            <div class="row">
+                <div class="column texto center">
+                    <div class="textoCentro">
+                        <span class="titulo-sub negrito colorido">Alterar</span><span class="titulo-sub negrito"> vendas</span>
                     </div>
-                    <div class="tela">
-                        <img src="../assets/images/alterarVenda.png" alt="">
-                    </div>
+                    <h2>Cometeu um erro? Sem problemas! Nossa funcionalidade de alteração de venda permite que você faça ajustes em vendas já registradas. Você pode adicionar ou remover produtos, alterar quantidades e muito mais.</h2>
+                </div>
+                <div class="tela">
+                    <img src="../assets/images/alterarVenda.png" alt="">
                 </div>
             </div>
-            <div class="bloco">
-                <div class="row center">
-                    <div class="column" style="width: 50%;">
-                        <span class="titulo-sub negrito">Histórico de Vendas</span>
-                        <h2>Acompanhe o desempenho do seu negócio com nosso recurso de histórico de vendas. Veja todas as suas vendas passadas, analise tendências e use essas informações para tomar decisões informadas sobre o futuro do seu negócio.</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="bloco">
-                <div class="row">
-                    <div class="tela">
-                        <img src="../assets/images/condicional.jpg" alt="">
-                    </div>
-                    <div class="column center texto">
-                        <div class="textoDireita">
-                            <span class="titulo-sub negrito">Gerenciamento de Condicional</span>
-                        </div>
-                        <h2>Nosso sistema também oferece uma funcionalidade de gerenciamento de condicional, permitindo que você gerencie vendas condicionais de forma eficaz. Você pode acompanhar os produtos em consignação, registrar vendas condicionais e muito mais.</h2>    
-                    </div>                    
-                </div>
-            </div>            
         </div>
-    </section>
+        <div class="bloco">
+            <div class="row center">
+                <div class="column" style="width: 50%;">
+                    <div class="textoCentro">
+                        <span class="titulo-sub negrito colorido">Histórico</span><span class="titulo-sub negrito"> de Vendas</span>
+                    </div>
+                    <h2>Acompanhe o desempenho do seu negócio com nosso recurso de histórico de vendas. Veja todas as suas vendas passadas, analise tendências e use essas informações para tomar decisões informadas sobre o futuro do seu negócio.</h2>
+                </div>
+            </div>
+        </div>
+        <div class="bloco">
+            <div class="row">
+                <div class="tela">
+                    <img src="../assets/images/condicional.jpg" alt="">
+                </div>
+                <div class="column center texto">
+                    <div class="textoDireita">
+                        <span class="titulo-sub negrito">Gerenciamento de </span><span class="titulo-sub negrito colorido">Condicional</span>
+                    </div>
+                    <h2>Nosso sistema também oferece uma funcionalidade de gerenciamento de condicional, permitindo que você gerencie vendas condicionais de forma eficaz. Você pode acompanhar os produtos em consignação, registrar vendas condicionais e muito mais.</h2>    
+                </div>                    
+            </div>
+        </div>            
+    </div>
 </template>
 
 <script>
@@ -55,24 +57,27 @@
 
 <style scoped>
     *{
+        color:var(--texto-padrao);
+    }
+    .header_cad *{
         color:white;
+    }
+    .colorido{
+        color: var(--destaque)
     }
     .titulo-sub{
         font-size: 40px;
-        color: #3b4599;
     }
     h2{
-        font-size: 30px;
-    }
-    .tituloLista{
-        font-size: 50px;
+        text-align: justify;
+        font-size: 25px;
     }
     section{
         margin-top: 75px;
     }
-    .textoEsquerda{
+    .textoCentro{
         width: 100%;
-        text-align: left;
+        text-align: center;
     }
     .textoDireita{
         width: 100%;
@@ -93,7 +98,6 @@
     .titulo{
         margin-left: 5%;
         width: 90%;
-        color: #3b4599;
     }
     .center{
         align-items: center;
@@ -118,13 +122,6 @@
         border: 3px solid #3b449900;
         border-radius: 5px;
         transition: width 1.5s, border 2s;
-    }
-    .bloco .tela img:hover{
-        width: 95%;
-        transition: width 1.5s, border 2s;
-        border: 3px solid #3b4599;
-        border-radius: 5px;
-        box-shadow: 2px 2px 6px 3px rgba(0, 0, 0, 0.5);
     }
     .negrito{
         font-weight: bold;

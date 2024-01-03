@@ -1,69 +1,81 @@
 <template>
-    <section class="header_cad">
-        <div class="column">
+    <div class="column">
+        <section class="header_cad">
             <div class="titulo">
                 <h1>
                     Gerecie seus cadastros
-                    <hr size="6" width="20%" color="white" style="margin-left: 40%;border-radius: 20px;margin-bottom: 10px;">
+                    <hr size="6" width="20%" color="lightblue" style="margin-left: 40%;border-radius: 20px;margin-bottom: 10px;">
                 </h1>
                 <h2>Com a nossas funcionalidades de Cadastro, você pode organizar suas informações, acompanhar o histórico, facilitar a comunicação e aumentar a eficiência. Tudo isso com a entrada de dados automatizada e formulários fáceis de usar. Junte-se a nós e leve o seu negócio para o próximo nível com o nosso Sistema de Vendas.</h2>
             </div>
-            <div class="bloco">
-                <div class="row">
-                    <div class="column texto center">
-                        <h2>Organize suas informações: Mantenha todos os seus dados em um só lugar. Nunca mais perca informações importantes</h2>
+        </section>
+        <div class="bloco">
+            <div class="row">
+                <div class="column texto center">
+                    <div class="textoCentro">
+                        <span class="titulo-sub negrito colorido">Organize</span><span class="titulo-sub negrito"> suas informações</span>
                     </div>
-                    <div class="tela">
-                        <img src="../assets/images/cadastro.jpg" alt="">
-                    </div>
+                    <h2>Mantenha todos os seus dados em um só lugar. Nunca mais perca informações importantes</h2>
                 </div>
-            </div>
-            <div class="bloco">
-                <div class="row center">
-                    <div class="column" style="width: 50%;">
-                        <h2>Facilita a comunicação: Com todos os detalhes à mão, você pode se comunicar de maneira mais eficaz e personalizada.</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="bloco">
-                <div class="row">
-                    <div class="tela">
-                        <img src="../assets/images/eficiencia.jpg" alt="">
-                    </div>
-                    <div class="column center texto">
-                        <h2>Aumenta a eficiência: Economize tempo com a entrada de dados automatizada e formulários de cadastro fáceis de usar.</h2>    
-                    </div>                    
-                </div>
-            </div>
-            <div class="bloco">
-                <div class="column center">
-                    <h3 class="tituloLista">Nosso sistema possui:</h3>
-                    <div class="lista" style="width: 80%;">
-                        <div class="textoEsquerda">
-                            • Cadastro de Clintes
-                        </div>
-                        • Cadastro de Vendedores
-                        <div class="textoDireita">
-                            • Cadastro de Produtos
-                        </div>
-                        <div class="textoEsquerda">
-                            • Cadastro de Promoções
-                        </div>
-                        • Cadastro de Compras
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="bloco">
-                <div class="row center">
-                    <div class="column" style="width: 30%;">
-                        <h3 class="tituloLista">Principais Cadastros:</h3>
-                    </div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ghgg_fukbvU?si=kmzKiQfzvQy-oFqX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="tela">
+                    <img src="../assets/images/cadastro.jpg" alt="">
                 </div>
             </div>
         </div>
-    </section>
+        <div class="bloco">
+            <div class="row center">
+                <div class="column" style="width: 50%;">
+                    <div class="textoCentro">
+                        <span class="titulo-sub negrito">Facilita a </span><span class="titulo-sub negrito colorido">comunicação</span>
+                    </div>
+                    <h2>Com todos os detalhes à mão, você pode se comunicar de maneira mais eficaz e personalizada.</h2>
+                </div>
+            </div>
+        </div>
+        <div class="bloco">
+            <div class="row">
+                <div class="tela">
+                    <img src="../assets/images/eficiencia.jpg" alt="">
+                </div>
+                <div class="column center texto">
+                    <div class="textoCentro">
+                        <span class="titulo-sub negrito">Aumenta a </span><span class="titulo-sub negrito colorido">eficiência</span>
+                    </div>
+                    <h2>Economize tempo com a entrada de dados automatizada e formulários de cadastro fáceis de usar.</h2>    
+                </div>                    
+            </div>
+        </div>
+        <div class="bloco">
+            <div class="column center">
+                <h3 class="tituloLista">Nosso sistema possui:</h3>
+                <div class="lista" style="width: 80%;">
+                    <div class="textoEsquerda">
+                        • Cadastro de Clintes
+                    </div>
+                    <div class="textoCentro">
+                        • Cadastro de Vendedores
+                    </div>
+                    <div class="textoDireita">
+                        • Cadastro de Produtos
+                    </div>
+                    <div class="textoEsquerda">
+                        • Cadastro de Promoções
+                    </div>
+                    <div class="textoCentro">
+                        • Cadastro de Compras
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <div class="bloco">
+            <div class="row center">
+                <div class="column" style="width: 30%;">
+                    <h3 class="tituloLista colorido">Principais Cadastros:</h3>
+                </div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Ghgg_fukbvU?si=kmzKiQfzvQy-oFqX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>
@@ -73,8 +85,18 @@
 </script>
 
 <style scoped>
+    .header_cad *{
+        color:white;
+    }
+    .colorido{
+        color: var(--destaque)
+    }
+    .titulo-sub{
+        font-size: 40px;
+    }
     h2{
-        font-size: 30px;
+        text-align: justify;
+        font-size: 25px;
     }
     .tituloLista{
         font-size: 50px;
@@ -84,6 +106,10 @@
     }
     section{
         margin-top: 75px;
+    }
+    .textoCentro{
+        width: 100%;
+        text-align: center;
     }
     .textoDireita{
         width: 100%;

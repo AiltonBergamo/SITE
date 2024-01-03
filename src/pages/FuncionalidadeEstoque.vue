@@ -13,7 +13,7 @@
         <div class="bloco">
             <div class="row">
                 <div class="column texto center">
-                    <div class="textoCentraliza">
+                    <div class="textoCentro">
                         <span class="titulo-sub negrito colorido">Automatize</span><span class="titulo-sub negrito"> suas entradas</span>
                     </div>
                     <h2>Ao utilizar a funcionalidade de compra seus estoques são automaticamente abastecidos. Nunca mais faça restoque manual.</h2>
@@ -43,7 +43,7 @@
                     <img src="../assets/images/transferencia.png" alt="">
                 </div>
                 <div class="column center texto">
-                    <div class="textoDireita">
+                    <div class="textoCentro">
                         <span class="titulo-sub negrito">Transferencia de estoque</span>
                     </div>
                     <h2>O nosso sitema permite que o estoque seja transferido entre multiplas empresas de forma simples e rápida.</h2>    
@@ -90,10 +90,6 @@
     section{
         margin-top: 75px;
     }
-    .textoEsquerda{
-        width: 100%;
-        text-align: left;
-    }
     .textoCentro{
         width: 100%;
         text-align: center;
@@ -113,7 +109,6 @@
     .titulo{
         margin-left: 5%;
         width: 90%;
-        /* color: var(--texto-titulo); */
     }
     .center{
         align-items: center;
@@ -143,13 +138,6 @@
         border-radius: 5px;
         transition: width 1.5s, border 2s;
     }
-    /* .bloco .tela img:hover{
-        width: 95%;
-        transition: width 1.5s, border 2s;
-        border: 3px solid #3b4599;
-        border-radius: 5px;
-        box-shadow: 2px 2px 6px 3px rgba(0, 0, 0, 0.5);
-    } */
     .destaque{
         width: 60%;
         height: 180px;
