@@ -88,30 +88,26 @@ export default {
             if(this.form.nome.trim()===''){
                 this.required.nome = true;
             }
+            else{
+                this.required.nome = false;
+            }
             if(this.form.email.trim()===''){
                 this.required.email = true;
+            }
+            else{
+                this.required.email = false;
             }
             if(this.form.celular.trim()===''){
                 this.required.whatsapp = true;
             }
+            else{
+                this.required.whatsapp = false;
+            }
             this.validaEmail();
         },
         validaEmail(){
-            const usuario = this.form.email.substring(0, this.form.email.indexOf("@"));
-            const dominio = this.form.email.substring(this.form.email.indexOf("@")+ 1, this.form.email.length);
-            if (this.form.email.search("@")==-1||
-                !(usuario.length >=1) &&
-                !(dominio.length >=3) &&
-                (usuario.search("@")==-1) &&
-                (dominio.search("@")==-1) &&
-                (usuario.search(" ")==-1) &&
-                (dominio.search(" ")==-1) &&
-                (dominio.search(".")!=-1) &&
-                (dominio.indexOf(".") >=1)&&
-                (dominio.lastIndexOf(".") < dominio.length - 1)) {
-                console.log("invalido", usuario, dominio);
-                this.invalido.email = true;
-            }
+            const re = /\S+@\S+\.\S+/;
+            this.invalido.email = !re.test(this.form.email);
         }
     }
 
