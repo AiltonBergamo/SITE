@@ -1,69 +1,96 @@
 <template>
-    <section class="header">
-        <h1>Fale com um especialista</h1>
-        <hr size="6" width="15%" align="center" color="white">
-        <h3>Peça seu orçamento e tire dúvidas com nossa equipe preenchendo as informações</h3>
-        <div class="Linha_01">
-            <div class="input_container">
-                <label for="nome">Nome*</label>
-                <input type="text" placeholder="&nbsp;Nome*" name="nome" id="nome" value="">
-            </div>
-            <div class="input_container">
-                <label for="nome">Email*</label>
-                <input type="text" placeholder="&nbsp;Email*" name="email" id="email" value="">
-            </div>
-            <div class="input_container">
-                <label for="nome">Whatsapp*</label>
-                <input type="text" @keydown="maskfone" v-model="celular" placeholder="&nbsp;Whatsapp*" name="phoneNumber"
-                    id="celular">
-            </div>
-        </div>
-        <div class="Linha_01">
-            <div class="input_container">
-                <label for="nome">Empresa*</label>
-                <input type="text" placeholder="&nbsp;Empresa*" name="subject" id="assunto" value="">
-            </div>
-            <div class="input_container">
-                <label for="nome">Seguimento de atuação aberto*</label>
-                <input type="text" placeholder="&nbsp;Seguimento" name="phoneNumber" id="celular" value="">
-            </div>
-            <div class="input_container">
-                <label for="nome">Quantos colaboradores a empresa tem?*</label>
-                <input type="text" placeholder="&nbsp;Colaboradores" name="subject" id="assunto" value="">
-            </div>
-
-        </div>
-        <div class="textoMessage">
-            <div class="Mensagem">
+    <form @submit.prevent="valida">
+        <section class="header">
+            <h1>Fale com um especialista</h1>
+            <hr size="6" width="15%" align="center" color="white">
+            <h3>Peça seu orçamento e tire dúvidas com nossa equipe preenchendo as informações</h3>
+            <div class="Linha_01">
                 <div class="input_container">
-                    <label for="nome">Como podemos ajudar?</label>
-                    <textarea name="message" placeholder="Como podemos ajudar?" id="messagem" cols="60"
-                        rows="10"></textarea>
+                    <label for="nome">Nome<span v-if="!required.nome">*</span><span class="required" v-if="required.nome">* Campo Obrigatório</span></label>
+                    <input type="text" placeholder="&nbsp;Nome*" name="nome" id="nome" v-model="form.nome">
+                </div>
+                <div class="input_container">
+                    <label for="nome">Email<span v-if="!required.email">*</span><span class="required" v-if="required.email">* Campo Obrigatório</span></label>
+                    <input type="text" placeholder="&nbsp;Email*" name="email" id="email" v-model="form.email">
+                </div>
+                <div class="input_container">
+                    <label for="nome">Whatsapp<span v-if="!required.whatsapp">*</span><span class="required" v-if="required.whatsapp">* Campo Obrigatório</span></label>
+                    <input type="text" @keydown="maskfone" v-model="form.celular" placeholder="&nbsp;Whatsapp*" name="phoneNumber"
+                        id="celular" maxlength="15">
                 </div>
             </div>
-            <div class="work">
-                <div class="inputBox">
-                    <input type="file" id="fileUpload" name="files" multiple="multiple">
+            <div class="Linha_01">
+                <div class="input_container">
+                    <label for="nome">Empresa</label>
+                    <input type="text" placeholder="&nbsp;Empresa" name="subject" id="assunto" v-model="form.empresa">
                 </div>
-                <div>
-                    <input type="submit" value="Enviar e-mail" class="btn">
+                <div class="input_container">
+                    <label for="nome">Seguimento de atuação aberto</label>
+                    <input type="text" placeholder="&nbsp;Seguimento" name="phoneNumber" id="celular" v-model="form.seguimento">
+                </div>
+                <div class="input_container">
+                    <label for="nome">Quantos colaboradores a empresa tem?</label>
+                    <input type="number" min="1" placeholder="&nbsp;Colaboradores" name="subject" id="assunto" v-model="form.funcionarios">
+                </div>
+
+            </div>
+            <div class="textoMessage">
+                <div class="Mensagem">
+                    <div class="input_container">
+                        <label for="nome">Como podemos ajudar?</label>
+                        <textarea name="message" placeholder="Como podemos ajudar?" id="messagem" cols="60"
+                            rows="10"></textarea>
+                    </div>
+                </div>
+                <div class="work">
+                    <div class="inputBox">
+                        <input type="file" id="fileUpload" name="files" multiple="multiple">
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar e-mail" class="btn">
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </form>
 </template>
 
 <script>
 export default {
     name: "Contato-page",
     data() {
-        return { celular: '' }
+        return { 
+            form: {
+                nome: '',
+                email: '',
+                celular: '',
+                empresa: '',
+                seguimento: '',
+                funcionarios: 1,
+            },
+            required: {
+                nome: false,
+                email: false,
+                whatsapp: false,
+            }
+        }
     },
     methods: {
         maskfone() {
-            this.celular = this.celular.replace(/\D/g, "")
-            this.celular = this.celular.replace(/^(\d{2})(\d)/g, "($1) $2")
-            this.celular = this.celular.replace(/(\d)(\d{4})$/, "$1-$2")
+            this.form.celular = this.form.celular.replace(/\D/g, "")
+            this.form.celular = this.form.celular.replace(/^(\d{2})(\d)/g, "($1) $2")
+            this.form.celular = this.form.celular.replace(/(\d)(\d{4})$/, "$1-$2")
+        },
+        valida(){
+            if(this.form.nome.trim()===''){
+                this.required.nome = true;
+            }
+            if(this.form.email.trim()===''){
+                this.required.email = true;
+            }
+            if(this.form.celular.trim()===''){
+                this.required.whatsapp = true;
+            }
         }
     }
 
@@ -74,7 +101,10 @@ export default {
 
 
 <style>
-
+.required{
+    color: red;
+    font-size: small;
+}
 .header {
     margin-top: 75px;
     display: flex;
@@ -174,11 +204,29 @@ export default {
     padding: 10px 20px;
     border-radius: 5px;
 }
-
+.btn:hover{
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    transition: color 0.5s, background-color 0.5s;
+}
+#fileUpload, #file-upload-button{
+    cursor: pointer;
+}
 .input_container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     color: white;
+}
+input[type=number] {
+    padding: 0.2rem;
+    border-radius: 1rem;
+    background: var(--black3);
+    text-transform: none;
+    color: var(--black1);
+    border: 0.1rem solid var(--black1);
+    width: 350px;
+    height: 35px;
 }
 </style>
