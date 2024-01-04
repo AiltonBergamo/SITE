@@ -10,7 +10,7 @@
                     <input type="text" placeholder="&nbsp;Nome*" name="nome" id="nome" v-model="form.nome">
                 </div>
                 <div class="input_container">
-                    <label for="nome">Email<span v-if="!required.email">*</span><span class="required" v-if="required.email">* Campo Obrigatório</span></label>
+                    <label for="nome">Email<span v-if="!required.email && !invalido.email">*</span><span class="required" v-if="required.email">* Campo Obrigatório</span><span class="required" v-if="invalido.email">* Email Inválido</span></label>
                     <input type="text" placeholder="&nbsp;Email*" name="email" id="email" v-model="form.email">
                 </div>
                 <div class="input_container">
@@ -72,6 +72,9 @@ export default {
                 nome: false,
                 email: false,
                 whatsapp: false,
+            },
+            invalido:{
+                email: false,
             }
         }
     },
@@ -90,6 +93,24 @@ export default {
             }
             if(this.form.celular.trim()===''){
                 this.required.whatsapp = true;
+            }
+            this.validaEmail();
+        },
+        validaEmail(){
+            const usuario = this.form.email.substring(0, this.form.email.indexOf("@"));
+            const dominio = this.form.email.substring(this.form.email.indexOf("@")+ 1, this.form.email.length);
+            if (this.form.email.search("@")==-1||
+                !(usuario.length >=1) &&
+                !(dominio.length >=3) &&
+                (usuario.search("@")==-1) &&
+                (dominio.search("@")==-1) &&
+                (usuario.search(" ")==-1) &&
+                (dominio.search(" ")==-1) &&
+                (dominio.search(".")!=-1) &&
+                (dominio.indexOf(".") >=1)&&
+                (dominio.lastIndexOf(".") < dominio.length - 1)) {
+                console.log("invalido", usuario, dominio);
+                this.invalido.email = true;
             }
         }
     }
