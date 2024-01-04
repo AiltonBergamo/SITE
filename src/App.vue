@@ -10,8 +10,10 @@
         <a href="#">Funcionalidades</a>
       </router-link>      
     </div>
-    <div class="item__3">
-      <p href="#">Planos e preços</p>
+    <div class="item__4">
+      <router-link to="/planos">
+        <a href="#">Planos e preços</a>
+      </router-link>
     </div>
     <div class="item__4">
       <router-link to="/contato">
@@ -92,7 +94,7 @@ export default {
   max-height: 200px;
   height: 75px;
   align-items: center;
-  border-bottom: 4mm ridge rgba(245, 245, 243, 0.1);
+  border-bottom: 4mm ridge rgba(245, 245, 243, 0.2);
 }
 
 .item__1 {
