@@ -85,29 +85,42 @@ export default {
             this.form.celular = this.form.celular.replace(/(\d)(\d{4})$/, "$1-$2")
         },
         valida(){
+            var invalido = false;
             if(this.form.nome.trim()===''){
                 this.required.nome = true;
+                invalido = true;
             }
             else{
                 this.required.nome = false;
             }
             if(this.form.email.trim()===''){
                 this.required.email = true;
+                invalido = true;
             }
             else{
                 this.required.email = false;
             }
             if(this.form.celular.trim()===''){
                 this.required.whatsapp = true;
+                invalido = true
             }
             else{
                 this.required.whatsapp = false;
             }
-            this.validaEmail();
+            invalido = this.validaEmail();
+            if(invalido){
+                return;
+            }
+            //envia o email
         },
         validaEmail(){
-            const re = /\S+@\S+\.\S+/;
-            this.invalido.email = !re.test(this.form.email);
+            if(this.required.email){
+                this.invalido.email = false
+            }else{
+                const re = /\S+@\S+\.\S+/;
+                this.invalido.email = !re.test(this.form.email);
+            }
+            return this.invalido.email;
         }
     }
 
@@ -131,7 +144,7 @@ export default {
     width: 100%;
     height: 68vh;
     border-radius: 20px 60px 35px;
-    background: #73AD21;
+    background: var(--fundo-padrao);
     width: 100%;
     height: 100%;
     padding: 1em;
