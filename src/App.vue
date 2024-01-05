@@ -201,18 +201,21 @@ export default {
 .footer {
   height: 20vh;
   display: grid;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 33% 33% 34%;
   flex-direction: column;
 }
 
- .box-container {
+.box-container {
   display: flex;
   flex-direction: column;
-  background-color: bisque;
+  background-color: var(--fundo-padrao);
   text-align: center;
   justify-content: center;  
 }
-
+.box-container *{
+  text-decoration: none;
+  color: black;
+}
 .box {
   display: flex;
   flex-direction: column;
