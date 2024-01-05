@@ -26,7 +26,9 @@
       </router-link>
     </div>
     <div class="item__6">
-      <p href="#">Entrar</p>
+      <router-link to="/login">
+        <a href="#">Entrar</a>
+      </router-link>
     </div>
   </div>
   <router-view>
@@ -185,8 +187,11 @@ export default {
   justify-content: center;
   font-size: 20px;
 }
-
-.item__6 p:hover {
+.item__6 a{
+    text-decoration: none; 
+    color: black;
+}
+.item__6 a:hover {
   color: rgb(62, 240, 86);
   border: 30px solid white;
   background-color: rgb(241, 243, 245);
