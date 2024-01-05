@@ -4,6 +4,7 @@ import Home from "../pages/Home.vue";
 import Contato from "../pages/Contato.vue";
 import Funcional from "../pages/Funcional.vue";
 import Planos from "../pages/Planos.vue";
+import Login from "../pages/Login.vue";
 import FuncionalidadeCadastro from "../pages/FuncionalidadeCadastro.vue"
 import FuncionalidadeEstoque from "../pages/FuncionalidadeEstoque.vue"
 import FuncionalidadeFrenteCaixa from "../pages/FuncionalidadeFrenteCaixa.vue"
@@ -36,6 +37,11 @@ const routes = [
         path: "/planos",
         name: "planos-page",
         component: Planos,
+    },
+    {
+        path: "/login",
+        name: "login-page",
+        component: Login,
     },
     {
         path: "/funcional/cadastro",
