@@ -130,7 +130,7 @@ a{
   margin: 10px;
   display: flex;
   flex-direction: column;
-  background-color: #b7d3ff;  
+  background-color: var(--fundo-padrao);  
   width: 320px;
   height: 400px;
   border-radius: 10px;

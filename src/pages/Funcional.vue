@@ -165,7 +165,7 @@ a{
   width: 20%;
   height: 20%;
   display: flex;
-  background-color: #b7d3ff;
+  background-color: var(--fundo-padrao);
   justify-content: center;
   align-items: center;
   margin-top: 1em;
@@ -175,7 +175,7 @@ a{
   margin: 10px;
   display: flex;
   flex-direction: column;
-  background-color: #b7d3ff;  
+  background-color: var(--fundo-padrao);  
   width: 320px;
   height: 200px;
   border-radius: 10px;

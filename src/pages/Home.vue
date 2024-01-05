@@ -134,7 +134,7 @@ export default {
   display: grid;
   grid-template-columns: 50% 50%;
   border-radius: 20px 60px 35px;
-  background: #73AD21;
+  background: var(--fundo-padrao);
   width: 100%;
   height: 100%;  
 }
