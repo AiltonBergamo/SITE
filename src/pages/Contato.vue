@@ -2,7 +2,7 @@
     <form @submit.prevent="valida">
         <section class="header">
             <h1>Fale com um especialista</h1>
-            <hr size="6" width="15%" align="center" color="white">
+            <hr size="6" width="15%" align="center" color="#0597F2">
             <h3>Peça seu orçamento e tire dúvidas com nossa equipe preenchendo as informações</h3>
             <div class="Linha_01">
                 <div class="input_container">
@@ -131,12 +131,16 @@ export default {
 
 
 <style>
+label{
+    font-weight:500;
+}
 .required{
     color: red;
     font-size: small;
 }
 .header {
     margin-top: 75px;
+    margin-bottom: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -149,14 +153,6 @@ export default {
     height: 100%;
     padding: 1em;
     gap: 0.5em;
-}
-
-.header h1 {
-    color: rgb(253, 254, 255);
-}
-
-.header h3 {
-    color: rgb(253, 254, 255);
 }
 
 .Linha_01 {
@@ -247,7 +243,6 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    color: white;
 }
 input[type=number] {
     padding: 0.2rem;

@@ -114,8 +114,8 @@ form{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    color: white;
     width: 100%;
+    font-weight: bold;
 }
 input{
     padding: 0.2rem;

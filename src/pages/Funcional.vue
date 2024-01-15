@@ -150,7 +150,6 @@ a{
 
 .box_funcional a {
   text-decoration: none;
-  color: black;
 }
 
 .header_txt{

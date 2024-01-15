@@ -4,16 +4,16 @@
     --black2: #c6c6c6;
     --black3: #eee;
     --scrollbar-thumb: #1857bc;
-    --btn: #287bff;
+    --btn: #362FD9;
     --navbar: #1857bc;
     --color: #daac00;
     --background: #fcc302;
     --white: #fff;
     --home-background-image: url(./icon/404-error-animate.svg);
-    --fundo-padrao: #b7d3ff;
-    --destaque: #73AD21;
+    --fundo-padrao: #85CDFD;
+    --destaque: #362FD9;
     --texto-padrao: var(--black);
-    --texto-titulo: #3b4599;
+    --rodape: #DEFCF9;
   }
 
   input[type=text] {

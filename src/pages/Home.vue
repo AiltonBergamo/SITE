@@ -1,6 +1,6 @@
 <template>
   <section class="container tela">
-    <div class="container__titulo">
+    <div class="container__titulo ">
       <h1>TiDoc é o sistema de gestão online que gerencia melhor seu negócio.</h1>
     </div>
     <div class="container__imagem">
@@ -127,7 +127,6 @@ export default {
 
 
 <style>
-
 .container {
   margin-top: 75px;
   height: 60vh;
@@ -155,7 +154,6 @@ export default {
 }
 
 .container__titulo h1 {
-  color: white;
   font-size: 28px;
   font-weight: 700;
   width: 350px;

@@ -4,7 +4,7 @@
             <div class="titulo">
                 <h1 class="titulo">
                     Venda
-                    <hr size="6" width="4%" color="lightblue" style="margin-left: 48%;border-radius: 20px;margin-bottom: 10px;">
+                    <hr size="6" width="4%" color="#0597F2" style="margin-left: 48%;border-radius: 20px;margin-bottom: 10px;">
                 </h1>
                 <h2>Nosso sistema permite que você realize vendas de maneira eficiente e sem complicações. Com apenas alguns cliques, você pode registrar uma venda, adicionar produtos e finalizar a transação.</h2>
                 <h2>Junte-se a nós e leve o seu negócio para o próximo nível com o nosso Sistema de Vendas.</h2>
@@ -56,12 +56,6 @@
 </script>
 
 <style scoped>
-    *{
-        color:var(--texto-padrao);
-    }
-    .header_cad *{
-        color:white;
-    }
     .colorido{
         color: var(--destaque)
     }

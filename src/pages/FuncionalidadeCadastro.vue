@@ -4,7 +4,7 @@
             <div class="titulo">
                 <h1>
                     Gerecie seus cadastros
-                    <hr size="6" width="20%" color="lightblue" style="margin-left: 40%;border-radius: 20px;margin-bottom: 10px;">
+                    <hr size="6" width="20%" color="#0597F2" style="margin-left: 40%;border-radius: 20px;margin-bottom: 10px;">
                 </h1>
                 <h2>Com a nossas funcionalidades de Cadastro, você pode organizar suas informações, acompanhar o histórico, facilitar a comunicação e aumentar a eficiência. Tudo isso com a entrada de dados automatizada e formulários fáceis de usar. Junte-se a nós e leve o seu negócio para o próximo nível com o nosso Sistema de Vendas.</h2>
             </div>
@@ -85,9 +85,6 @@
 </script>
 
 <style scoped>
-    .header_cad *{
-        color:white;
-    }
     .colorido{
         color: var(--destaque)
     }

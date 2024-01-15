@@ -208,7 +208,7 @@ export default {
 .box-container {
   display: flex;
   flex-direction: column;
-  background-color: var(--fundo-padrao);
+  background-color: var(--rodape);
   text-align: center;
   justify-content: center;  
 }
