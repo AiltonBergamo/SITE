@@ -25,6 +25,11 @@
         <a href="#" >Sobre</a>
       </router-link>
     </div>
+    <div class="item__5">
+      <router-link to="/tips">
+        <a href="#" >Dicas</a>
+      </router-link>
+    </div>
     <div class="item__6">
       <router-link to="/login">
         <a href="#">Entrar</a>
